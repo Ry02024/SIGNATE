@@ -18,10 +18,12 @@ Geminiを用いて、分析結果を分かりやすく解説します。
 予測結果を踏まえ、次のフェーズでどのようなデータ収集や分析を行うべきか提案します。
 # 使用方法
 必要なライブラリをインストールします。
-```pip install streamlit pandas matplotlib seaborn scikit-learn japanize-matplotlib
+```
+pip install streamlit pandas matplotlib seaborn scikit-learn japanize-matplotlib
 ```
 streamlit_app.py を実行します。
-```streamlit run streamlit_app.py
+```
+streamlit run streamlit_app.py
 ```
 アプリがブラウザで開きます。
 訓練データ（train.tsv）とテストデータ（test.tsv）をアップロードします。
@@ -30,10 +32,11 @@ streamlit_app.py を実行します。
 Geminiによる分析結果の解説と提案を参照し、次のアクションを決定します。
 データセット
 訓練データとテストデータは、以下の形式のTSVファイルである必要があります。
-```sepal length	sepal width	petal length	petal width	class
-5.1	3.5	1.4	0.2	Iris-setosa
-4.9	3.0	1.4	0.2	Iris-setosa
-```
+| sepal length | sepal width | petal length | petal width | class       |
+|--------------|-------------|--------------|-------------|-------------|
+| 5.1          | 3.5         | 1.4          | 0.2         | Iris-setosa |
+| 4.9          | 3.0         | 1.4          | 0.2         | Iris-setosa |
+
 
 # 注意点
 テストデータには class 列が含まれていなくても構いません。
